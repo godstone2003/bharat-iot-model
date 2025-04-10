@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h2>Prediction Result</h2>
+
+    {% if prediction %}
+        <p>Predicted Value: <strong>{{ prediction }}</strong></p>
+    {% else %}
+        <p style="color: red;">❌ No prediction available.</p>
+    {% endif %}
+
+    <br><a href="/">🔙 Back to Home</a>
+</body>
+</html>
