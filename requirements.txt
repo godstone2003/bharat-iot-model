@@ -1,5 +1,0 @@
-Flask
-numpy
-joblib
-boto3
-scikit-learn
