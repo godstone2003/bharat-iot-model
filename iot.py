@@ -23,7 +23,7 @@ table = dynamodb.create_table(
 
 print("Creating table...")
 table.meta.client.get_waiter('table_exists').wait(TableName='iot-input-table')
-print("✅ Table created!")
+print("Table created!")
 print("Staring the iot device to send the data to model")
 
 #iot device data sending code 
@@ -56,8 +56,8 @@ def simulate_iot_input():
     )
 
     result = json.load(response['Payload'])
-    print(f"🔁 Sent data: {payload}")
-    print(f"✅ Lambda response: {result}")
+    print(f"Sent data: {payload}")
+    print(f"Lambda response: {result}")
 
 if __name__ == "__main__":
     while True:
